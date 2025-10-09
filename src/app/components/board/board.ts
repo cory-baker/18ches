@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BoardModel } from '../models/board.model';
+import { BoardModel } from '../../models/board.model';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-board',
