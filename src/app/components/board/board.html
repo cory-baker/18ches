@@ -1,11 +1,5 @@
 <svg id="map" width="975" height="702.5">
   <g transform="scale(0.5)">
-    <g id="map-hexes" transform="translate(50 37.5)">
-      @for (basePos of basePositions.values(); track $index) {
-      <g [attr.transform]="'translate(' + basePos.x + ',' + basePos.y + ')'" fill="#EFEFD6" stroke="black" opacity="1">
-        <polygon points="100,0 50,87 -50,87 -100,0 -50,-87 50,-87"></polygon>
-      </g>
-      }
-    </g>
+    <g id="map-hexes" transform="translate(50 37.5)"></g>
   </g>
 </svg>
