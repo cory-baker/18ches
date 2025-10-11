@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <defs>
-    <symbol id="empty-hex">
-      <polygon points="100,0 50,87 -50,87 -100,0 -50,-87 50,-87"/>
-    </symbol>
-  </defs>
-</svg>
-<!-- viewBox="-100 -87 200 174" -->

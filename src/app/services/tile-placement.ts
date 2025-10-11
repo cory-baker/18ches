@@ -1,10 +1,10 @@
 import { Injectable } from "@angular/core";
-
+import { HexModel } from "../models/hex.model";
 @Injectable({
   providedIn: 'root'
 })
 export class TilePlacement {
 
-  placeTile(coordinates: { x: number, y: number }, svg: SVGElement) {
+  placeTile(hex: HexModel) {
   }
 }

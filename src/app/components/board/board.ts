@@ -10,7 +10,7 @@ import { SVG } from '@svgdotjs/svg.js';
   styleUrl: './board.scss'
 })
 export class Board implements AfterViewInit {
-  basePositions = BoardModel.basePositions;
+  basePositions = BoardModel.staticHexes;
 
   ngAfterViewInit() {
     const mapHexes = SVG('#map-hexes');
