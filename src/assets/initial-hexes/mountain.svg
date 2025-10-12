@@ -4,7 +4,7 @@
     <g transform="rotate(0)">
       <g transform="translate(0 0)">
         <text class="number" fill="black">80</text>
-        <polygon transform="translate(-10 5)" fill="#cb7745" points="0,20 10,0 20,20"></polygon>
+        <polygon transform="translate(-10 5)" fill="#C97646" points="0,20 10,0 20,20"></polygon>
       </g>
     </g>
   </g>
