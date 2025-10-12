@@ -1,0 +1,21 @@
+<g fill="#EAE0C8" stroke="black" opacity="1">
+  <polygon points="100,0 50,87 -50,87 -100,0 -50,-87 50,-87"></polygon>
+  <g class="tile">
+    <g transform="translate(0 0) rotate(0)">
+      <g transform="rotate(0)">
+        <g transform="translate(0 0) rotate(0)">
+          <g transform="">
+            <circle r="25" fill="white"></circle>
+            <text fill="black" font-size="22px" transform="scale(1.0,1)" dominant-baseline="central">C&amp;O</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(0)">
+      <g class="tile__text" transform="scale(1.1) translate(0 -40)" stroke-width="0.5">
+        <rect height="19" width="72" fill="#FFFFFF" fill-opacity="0.5" stroke="none" x="-36" y="-9.5"></rect>
+        <text transform="translate(0 1)">Richmond</text>
+      </g>
+    </g>
+  </g>
+</g>

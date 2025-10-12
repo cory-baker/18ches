@@ -1,0 +1,34 @@
+<g fill="#EAE0C8" stroke="black" opacity="1">
+  <polygon points="100,0 50,87 -50,87 -100,0 -50,-87 50,-87"></polygon>
+  <g class="tile">
+    <g transform="translate(0 0) rotate(0)">
+      <g transform="rotate(0)">
+        <g transform="translate(0 0) rotate(0)">
+          <g transform="">
+            <circle r="25" fill="white"></circle>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(0)">
+      <g transform="translate(30 -60)">
+        <text class="number" fill="black">80</text>
+        <polygon transform="translate(-10 5)" fill="#cb7745" points="0,20 10,0 20,20"></polygon>
+      </g>
+    </g>
+    <g transform="translate(-65 5) scale(1) rotate(0)">
+      <text fill="black" dominant-baseline="baseline" x="0" y="-5">C&amp;OC</text>
+      <g>
+        <path fill="white" d="M -11 6 A 44 44 0 0 0 11 6"></path>
+        <circle fill="white" r="6" cx="11" cy="6"></circle>
+        <circle fill="white" r="6" cx="-11" cy="6"></circle>
+      </g>
+    </g>
+    <g transform="rotate(0)">
+      <g class="tile__text" transform="scale(1.1) translate(0 40)" stroke-width="0.5">
+        <rect height="19" width="56" fill="#FFFFFF" fill-opacity="0.5" stroke="none" x="-28" y="-9.5"></rect>
+        <text transform="translate(0 1)">Berlin</text>
+      </g>
+    </g>
+  </g>
+</g>

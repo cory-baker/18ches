@@ -1,0 +1,13 @@
+<g fill="#EAE0C8" stroke="black" opacity="1">
+  <polygon points="100,0 50,87 -50,87 -100,0 -50,-87 50,-87"></polygon>
+  <g class="tile">
+    <g transform="translate(0 0) scale(1.5) rotate(0)">
+      <text fill="black" dominant-baseline="baseline" x="0" y="-5">C-P</text>
+      <g>
+        <path fill="white" d="M -11 6 A 44 44 0 0 0 11 6"></path>
+        <circle fill="white" r="6" cx="11" cy="6"></circle>
+        <circle fill="white" r="6" cx="-11" cy="6"></circle>
+      </g>
+    </g>
+  </g>
+</g>

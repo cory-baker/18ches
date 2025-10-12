@@ -1,0 +1,29 @@
+<g fill="#EAE0C8" stroke="black" opacity="1">
+  <polygon points="100,0 50,87 -50,87 -100,0 -50,-87 50,-87"></polygon>
+  <g class="tile">
+    <g transform="translate(0 0) rotate(0)">
+      <g transform="rotate(0)">
+        <g transform="translate(0 0) rotate(0)">
+          <g transform="">
+            <circle r="25" fill="white"></circle>
+            <text fill="black" font-size="22px" transform="scale(1.0,1)" dominant-baseline="central">SRR</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(0)">
+      <g transform="translate(30 -60)">
+        <text class="number" fill="black">40</text>
+        <g transform="translate(0 17) scale(0.7)">
+          <path class="tile__water" d="M -15 -7 Q -7.5 -15, 0 -7 S 7.5 1, 15 -7M -15 -2  Q -7.5 -10, 0 -2  S 7.5 6, 15 -2"></path>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(0)">
+      <g class="tile__text" transform="scale(1.1) translate(0 40)" stroke-width="0.5">
+        <rect height="19" width="80" fill="#FFFFFF" fill-opacity="0.5" stroke="none" x="-40" y="-9.5"></rect>
+        <text transform="translate(0 1)">Strasburg</text>
+      </g>
+    </g>
+  </g>
+</g>

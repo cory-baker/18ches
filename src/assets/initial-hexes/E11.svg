@@ -1,0 +1,15 @@
+<g fill="#EAE0C8" stroke="black" opacity="1">
+  <polygon points="100,0 50,87 -50,87 -100,0 -50,-87 50,-87"></polygon>
+  <g class="tile">
+    <g>
+      <circle transform="translate(0 0)" r="10.250000000000002" fill="#000000" stroke="white" stroke-width="4"></circle>
+      <circle stroke="none" transform="translate(0 0)" r="30" style="cursor: pointer; pointer-events: all;"></circle>
+    </g>
+    <g transform="rotate(0)">
+      <g class="tile__text" transform="scale(1.1) translate(0 -40)" stroke-width="0.5">
+        <rect height="19" width="120" fill="#FFFFFF" fill-opacity="0.5" stroke="none" x="-60" y="-9.5"></rect>
+        <text transform="translate(0 1)">Fredericksburg</text>
+      </g>
+    </g>
+  </g>
+</g>

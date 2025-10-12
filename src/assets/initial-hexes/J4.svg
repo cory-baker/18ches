@@ -1,0 +1,52 @@
+<g fill="#fde900" stroke="black" opacity="1">
+  <polygon points="100,0 50,87 -50,87 -100,0 -50,-87 50,-87"></polygon>
+  <g class="tile">
+    <path d="M 0 87 L 0 50" stroke="#FFFFFF" stroke-width="12" stroke-dasharray="0"></path>
+    <path d="M 0 -87 L 0 -50" stroke="#FFFFFF" stroke-width="12" stroke-dasharray="0"></path>
+    <path d="M 0 87 L 0 50" stroke="#000000" stroke-width="9" stroke-dasharray="0"></path>
+    <path d="M 0 -87 L 0 -50" stroke="#000000" stroke-width="9" stroke-dasharray="0"></path>
+    <g transform="translate(0 50) rotate(0)">
+      <g transform="rotate(0)">
+        <g transform="translate(0 0) rotate(0)">
+          <g transform="rotate(0)">
+            <circle r="25" fill="white"></circle>
+          </g>
+        </g>
+      </g>
+      <g transform="rotate(170)">
+        <g transform="translate(42 0) rotate(-170)">
+          <g transform="rotate(0)">
+            <circle r="15" fill="white" style="stroke: rgb(119, 119, 119);"></circle>
+            <text class="number" fill="black" dominant-baseline="central" transform="translate(0 -1)">30</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(0 -50) rotate(180)">
+      <g transform="rotate(0)">
+        <g transform="translate(0 0) rotate(-180)">
+          <g transform="rotate(0)">
+            <circle r="25" fill="white"></circle>
+          </g>
+        </g>
+      </g>
+      <g transform="rotate(170)">
+        <g transform="translate(42 0) rotate(-350)">
+          <g transform="rotate(0)">
+            <circle r="15" fill="white" style="stroke: rgb(119, 119, 119);"></circle>
+            <text class="number" fill="black" dominant-baseline="central" transform="translate(0 -1)">30</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(-71.25 0) rotate(0)">
+      <text class="tile__text" transform="scale(1.5)">OO</text>
+    </g>
+    <g transform="rotate(0)">
+      <g class="tile__text" transform="scale(1.1) translate(0 0)" stroke-width="0.5">
+        <rect height="19" width="104" fill="#FFFFFF" fill-opacity="0.5" stroke="none" x="-52" y="-9.5"></rect>
+        <text transform="translate(0 1)">Philadelphia</text>
+      </g>
+    </g>
+  </g>
+</g>

@@ -1,0 +1,25 @@
+<g fill="#ec232a" stroke="black" opacity="1">
+  <polygon points="100,0 50,87 -50,87 -100,0 -50,-87 50,-87"></polygon>
+  <g class="tile">
+    <path transform="rotate(0)" d="M 6 75 L 6 87 L -6 87 L -6 75 L 0 48 Z" fill="#FFFFFF" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="9" stroke-dasharray="0"></path>
+    <path transform="rotate(0)" d="M 4.5 75 L 4.5 87 L -4.5 87 L -4.5 75 L 0 48 Z" fill="#000000" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="6.75" stroke-dasharray="0"></path>
+    <path transform="rotate(60)" d="M 6 75 L 6 87 L -6 87 L -6 75 L 0 48 Z" fill="#FFFFFF" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="9" stroke-dasharray="0"></path>
+    <path transform="rotate(60)" d="M 4.5 75 L 4.5 87 L -4.5 87 L -4.5 75 L 0 48 Z" fill="#000000" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="6.75" stroke-dasharray="0"></path>
+    <g transform="rotate(0) translate(0 0)">
+      <rect fill="#fde900" transform="translate(-72 0)" height="27" width="32" x="0" y="-12"></rect>
+      <text class="number" transform="translate(-56 0)" fill="#000000" stroke="#000000" dominant-baseline="central">40</text>
+      <rect fill="#71bf44" transform="translate(-40 0)" height="27" width="32" x="0" y="-12"></rect>
+      <text class="number" transform="translate(-24 0)" fill="#000000" stroke="#000000" dominant-baseline="central">60</text>
+      <rect fill="#cb7745" transform="translate(-8 0)" height="27" width="32" x="0" y="-12"></rect>
+      <text class="number" transform="translate(8 0)" fill="#000000" stroke="#000000" dominant-baseline="central">80</text>
+      <rect fill="#bcbdc0" transform="translate(24 0)" height="27" width="48" x="0" y="-12"></rect>
+      <text class="number" transform="translate(48 0)" fill="#000000" stroke="#000000" dominant-baseline="central">100</text>
+    </g>
+    <g transform="rotate(0)">
+      <g class="tile__text" transform="scale(1.1) translate(0 24)" stroke-width="0.5">
+        <rect height="19" width="72" fill="#FFFFFF" fill-opacity="0.5" stroke="none" x="-36" y="-9.5"></rect>
+        <text transform="translate(0 1)">New York</text>
+      </g>
+    </g>
+  </g>
+</g>

@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { BoardModel } from '../../models/board.model';
 import { CommonModule } from '@angular/common';
 import { SVG } from '@svgdotjs/svg.js';
+import { BoardService } from '../../services/board.service';
 
 @Component({
   selector: 'app-board',
@@ -10,12 +10,13 @@ import { SVG } from '@svgdotjs/svg.js';
   styleUrl: './board.scss'
 })
 export class Board implements AfterViewInit {
-  basePositions = BoardModel.staticHexes;
+
+  constructor(private boardService: BoardService) { }
 
   ngAfterViewInit() {
+    this.boardService.initializeBoard();
     const mapHexes = SVG('#map-hexes');
-
-    this.basePositions.forEach((hexModel, key) => {
+    this.boardService.allHexes.forEach((hexModel) => {
       mapHexes.add(hexModel.group);
     });
   }
