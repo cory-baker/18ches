@@ -1,4 +1,4 @@
-<g transform="translate(1000, 100)" fill="#bcbdc0" stroke="black" opacity="1">
+<g transform="translate(1000, 100)" fill="#CCCEC2" stroke="black" opacity="1">
   <polygon points="100,0 50,87 -50,87 -100,0 -50,-87 50,-87"></polygon>
   <g class="tile">
     <path d="M -75.34 43.5 A 150.67 150.67 0 0 1 75.34 43.5" stroke="#FFFFFF" stroke-width="12" stroke-dasharray="0"></path>
