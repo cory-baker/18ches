@@ -1,3 +1,4 @@
+// initial map
 import A3 from '../../assets/initial-hexes/A3.svg'
 import A7 from '../../assets/initial-hexes/A7.svg'
 import A13 from '../../assets/initial-hexes/A13.svg'
@@ -39,4 +40,12 @@ import mountain from '../../assets/initial-hexes/mountain.svg'
 import empty from '../../assets/initial-hexes/empty.svg'
 import water from '../../assets/initial-hexes/water.svg'
 
-export const ASSET_MAP = { A3, A7, A13, B2, B14, C5, C13, D2, D8, D12, E1, E3, E11, F2, F4, F8, F14, G1, G3, G5, G13, H2, H4, H6, H14, I3, I5, I9, J2, J4, J6, K1, K3, K5, K7, L2, B4, mountain, empty, water }
+//tracks
+import tX1 from '../../assets/tracks/tX1.svg'
+import tX6 from '../../assets/tracks/tX6.svg'
+import tX9 from '../../assets/tracks/tX9.svg'
+import t23 from '../../assets/tracks/t23.svg'
+import t25 from '../../assets/tracks/t25.svg'
+
+export const INITIAL_MAP = { A3, A7, A13, B2, B14, C5, C13, D2, D8, D12, E1, E3, E11, F2, F4, F8, F14, G1, G3, G5, G13, H2, H4, H6, H14, I3, I5, I9, J2, J4, J6, K1, K3, K5, K7, L2, B4, mountain, empty, water } as const;
+export const TRACKS = { t23, t25, tX1, tX6, tX9 } as const;

@@ -26,10 +26,10 @@ export class HexModel {
   }
 
   pixelsFromXAxis(xAxis: xAxis): number {
-    return COORDINATE_MAP.COLUMNS[xAxis]
+    return COORDINATE_MAP.COLUMNS[xAxis as keyof typeof COORDINATE_MAP.COLUMNS] // fix this
   }
   pixelsFromYAxis(yAxis: yAxis): number {
-    return COORDINATE_MAP.ROWS[yAxis]
+    return COORDINATE_MAP.ROWS[yAxis as keyof typeof COORDINATE_MAP.ROWS] // fix this
   }
 
   private parsePosition(position: Position): [xAxis, yAxis] {
