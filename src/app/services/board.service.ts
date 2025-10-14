@@ -10,12 +10,7 @@ export class BoardService {
   private hexes = new Map<Position, HexModel>();
 
   initializeBoard() {
-    Object.entries(STATIC_HEXES_WITH_INITIAL_GRAPHICS).forEach(async ([position, svgFile]) => {
-      const hex = new HexModel(position as Position, { raw: svgFile });
-      this.hexes.set(position as Position, hex);
-    });
-
-    Object.entries(PLACEABLE_HEXES_WITH_INITIAL_GRAPHICS).forEach(([position, svgFile]) => {
+    Object.entries({ ...STATIC_HEXES_WITH_INITIAL_GRAPHICS, ...PLACEABLE_HEXES_WITH_INITIAL_GRAPHICS }).forEach(async ([position, svgFile]) => {
       const hex = new HexModel(position as Position, { raw: svgFile });
       this.hexes.set(position as Position, hex);
     });

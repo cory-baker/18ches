@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Lato, sans-serif;
+  word-spacing: 1px;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+}

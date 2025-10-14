@@ -1,0 +1,28 @@
+svg .tile__text {
+  fill: black;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  pointer-events: none;
+}
+::ng-deep {
+  .tile {
+    fill: none;
+    stroke-width: 1;
+    text-anchor: middle;
+  }
+  .tile__text {
+    fill: black;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
+  }
+}
+::ng-deep {
+  #hex {
+    height: auto;
+    width: 20%;
+    svg {
+      display: block;
+    }
+  }
+}

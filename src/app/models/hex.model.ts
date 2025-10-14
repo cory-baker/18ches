@@ -1,7 +1,7 @@
 import { G } from '@svgdotjs/svg.js';
 import { Position, xAxis, yAxis } from '../types/coordinates';
 import { COORDINATE_MAP } from '../constants/hex-map';
-
+import testSVG from '../../assets/initial-hexes/A3.svg?raw'
 export class HexModel {
   position: Position;
   group: G;
@@ -11,8 +11,8 @@ export class HexModel {
     const [x, y] = this.parsePosition(position);
 
     if (svg.raw) {
-      this.group = new G()
-      this.group.svg(svg.raw)
+      this.group = new G(testSVG as any as SVGElement).svg(testSVG);
+      // this.group.svg(svg.raw)
     } else if (svg.js) {
       this.group = svg.js
 
@@ -26,10 +26,12 @@ export class HexModel {
   }
 
   pixelsFromXAxis(xAxis: xAxis): number {
-    return COORDINATE_MAP.COLUMNS[xAxis as keyof typeof COORDINATE_MAP.COLUMNS] // fix this
+    // return COORDINATE_MAP.COLUMNS[xAxis as keyof typeof COORDINATE_MAP.COLUMNS] // fix this
+    return 100;
   }
   pixelsFromYAxis(yAxis: yAxis): number {
-    return COORDINATE_MAP.ROWS[yAxis as keyof typeof COORDINATE_MAP.ROWS] // fix this
+    // return COORDINATE_MAP.ROWS[yAxis as keyof typeof COORDINATE_MAP.ROWS] // fix this
+    return 100;
   }
 
   private parsePosition(position: Position): [xAxis, yAxis] {
