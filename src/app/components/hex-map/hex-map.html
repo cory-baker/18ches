@@ -1,0 +1,8 @@
+<div id="map">
+  @for (hex of hexes$ | keyvalue; track hex.key) {
+  <app-hex [hex]="hex.value"></app-hex>
+  } @empty {
+  <li>There are no items.</li>
+  }
+
+</div>

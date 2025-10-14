@@ -1,18 +1,17 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SVG } from '@svgdotjs/svg.js';
 import { BoardService } from '../../services/board.service';
-import test from '../../../assets/initial-hexes/A3.svg?raw'
-import { Map } from "../map/map";
+import { HexMap } from "../hex-map/hex-map";
 @Component({
   selector: 'app-board',
-  imports: [CommonModule, Map],
+  imports: [CommonModule, HexMap],
   templateUrl: './board.html',
   styleUrl: './board.scss'
 })
-export class Board {
+export class Board implements AfterViewInit {
 
-  constructor() { }
+  constructor(private boardService: BoardService) { }
 
-
+  ngAfterViewInit() {
+  }
 }

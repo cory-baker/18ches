@@ -17,10 +17,14 @@ svg .tile__text {
     pointer-events: none;
   }
 }
-::ng-deep {
-  #hex {
-    height: auto;
-    width: 20%;
+:host {
+  position: absolute;
+  left: var(--hex-x-pos);
+  top: var(--hex-y-pos);
+  height: auto;
+  width: 20.5%;
+
+  ::ng-deep {
     svg {
       display: block;
     }
