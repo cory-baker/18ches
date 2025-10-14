@@ -21,8 +21,8 @@ svg .tile__text {
   position: absolute;
   left: var(--hex-x-pos);
   top: var(--hex-y-pos);
+  width: 10.5%;
   height: auto;
-  width: 20.5%;
 
   ::ng-deep {
     svg {

@@ -1,15 +1,18 @@
 import { Position } from "../types/coordinates";
 import { INITIAL_MAP } from "./assets";
+const baseXPositionPercentage = 7.84
+const baseYPositionPercentage = 6.35
+const hexWidthPercentage = 10.5
 export const COORDINATE_MAP = {
   COLUMNS: {
-    'A': 0, 'B': 150, 'C': 300, 'D': 450, 'E': 600, 'F': 750,
-    'G': 900, 'H': 1050, 'I': 1200, 'J': 1350, 'K': 1500, 'L': 1650
+    'A': 0, 'B': baseXPositionPercentage, 'C': baseXPositionPercentage * 2, 'D': baseXPositionPercentage * 3, 'E': baseXPositionPercentage * 4, 'F': baseXPositionPercentage * 5,
+    'G': baseXPositionPercentage * 6, 'H': baseXPositionPercentage * 7, 'I': baseXPositionPercentage * 8, 'J': baseXPositionPercentage * 9, 'K': baseXPositionPercentage * 10, 'L': baseXPositionPercentage * 11
   } as const,
 
   ROWS: {
-    '1': 0, '2': 86.6, '3': 173.21, '4': 259.81, '5': 346.41, '6': 433.01,
-    '7': 519.62, '8': 606.22, '9': 692.82, '10': 779.42, '11': 866.03,
-    '12': 952.63, '13': 1039.23, '14': 1125.83
+    '1': 0, '2': baseYPositionPercentage, '3': baseYPositionPercentage * 2, '4': baseYPositionPercentage * 3, '5': baseYPositionPercentage * 4, '6': baseYPositionPercentage * 5,
+    '7': baseYPositionPercentage * 6, '8': baseYPositionPercentage * 7, '9': baseYPositionPercentage * 8, '10': baseYPositionPercentage * 9, '11': baseYPositionPercentage * 10,
+    '12': baseYPositionPercentage * 11, '13': baseYPositionPercentage * 12, '14': baseYPositionPercentage * 13
   } as const,
 } as const;
 
