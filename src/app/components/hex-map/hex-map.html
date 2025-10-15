@@ -1,8 +1,9 @@
-<div id="map">
-  @for (hex of hexes$ | keyvalue; track hex.key) {
-  <app-hex [hex]="hex.value"></app-hex>
-  } @empty {
-  <li>There are no items.</li>
-  }
-
+<div id="hex-map">
+  <div class="aspect-container">
+    @for (hex of hexes$ | keyvalue; track hex.key) {
+    <app-hex [hex]="hex.value"></app-hex>
+    } @empty {
+    <li>There are no items.</li>
+    }
+  </div>
 </div>

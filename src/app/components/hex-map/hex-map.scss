@@ -1,5 +1,13 @@
-#map {
-  aspect-ratio: 7/5;
+#hex-map {
   width: 100%;
+  aspect-ratio: 7 / 5;
   position: relative;
+  overflow: hidden;
+}
+
+.aspect-container {
+  position: absolute;
+  width: 1400px;
+  height: 1000px;
+  transform-origin: top left;
 }

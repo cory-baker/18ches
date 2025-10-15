@@ -21,6 +21,21 @@ export class HexMap implements OnInit {
     // Initialize data before view is rendered
     this.mapService.initializeMap();
     this.hexes$ = this.mapService.allHexes;
+
+
+
+    const wrapper = document.querySelector('#hex-map') as HTMLElement;
+    const inner = document.querySelector('.aspect-container') as HTMLElement;
+
+    function scaleInner() {
+      if (wrapper && inner) {
+        const scale = wrapper.clientWidth / 1920;
+        inner.style.transform = `scale(${scale})`;
+      }
+    }
+
+    window.addEventListener('resize', scaleInner);
+    scaleInner(); // Initial call
   }
 
   // ngAfterViewInit() {

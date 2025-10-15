@@ -1,18 +1,28 @@
 import { Position } from "../types/coordinates";
 import { INITIAL_MAP } from "./assets";
-const baseXPositionPercentage = 7.84
-const baseYPositionPercentage = 6.35
-const hexWidthPercentage = 10.5
+
+// Based on SVG viewBox="-100 -87 200 174" and hexagon geometry
+const HEX_SVG_WIDTH = 200;    // SVG units (flat-to-flat)
+const HEX_SVG_HEIGHT = 174;   // SVG units (point-to-point)
+
+// Desired hex size in pixels
+export const HEX_PIXEL_WIDTH = 120;  // Target hex width in pixels
+const HEX_PIXEL_HEIGHT = Math.round(HEX_PIXEL_WIDTH * (HEX_SVG_HEIGHT / HEX_SVG_WIDTH)); // 104px (maintains aspect ratio)
+
+// Hexagonal grid spacing (in pixels)
+const COLUMN_SPACING_PX = Math.round(HEX_PIXEL_WIDTH * 0.75); // 90px (3/4 overlap for hex packing)
+const ROW_SPACING_PX = Math.round(HEX_PIXEL_HEIGHT * 0.5);    // 52px (half height for hex rows)
+
 export const COORDINATE_MAP = {
   COLUMNS: {
-    'A': 0, 'B': baseXPositionPercentage, 'C': baseXPositionPercentage * 2, 'D': baseXPositionPercentage * 3, 'E': baseXPositionPercentage * 4, 'F': baseXPositionPercentage * 5,
-    'G': baseXPositionPercentage * 6, 'H': baseXPositionPercentage * 7, 'I': baseXPositionPercentage * 8, 'J': baseXPositionPercentage * 9, 'K': baseXPositionPercentage * 10, 'L': baseXPositionPercentage * 11
+    'A': 0, 'B': COLUMN_SPACING_PX, 'C': COLUMN_SPACING_PX * 2, 'D': COLUMN_SPACING_PX * 3, 'E': COLUMN_SPACING_PX * 4, 'F': COLUMN_SPACING_PX * 5,
+    'G': COLUMN_SPACING_PX * 6, 'H': COLUMN_SPACING_PX * 7, 'I': COLUMN_SPACING_PX * 8, 'J': COLUMN_SPACING_PX * 9, 'K': COLUMN_SPACING_PX * 10, 'L': COLUMN_SPACING_PX * 11
   } as const,
 
   ROWS: {
-    '1': 0, '2': baseYPositionPercentage, '3': baseYPositionPercentage * 2, '4': baseYPositionPercentage * 3, '5': baseYPositionPercentage * 4, '6': baseYPositionPercentage * 5,
-    '7': baseYPositionPercentage * 6, '8': baseYPositionPercentage * 7, '9': baseYPositionPercentage * 8, '10': baseYPositionPercentage * 9, '11': baseYPositionPercentage * 10,
-    '12': baseYPositionPercentage * 11, '13': baseYPositionPercentage * 12, '14': baseYPositionPercentage * 13
+    '1': 0, '2': ROW_SPACING_PX, '3': ROW_SPACING_PX * 2, '4': ROW_SPACING_PX * 3, '5': ROW_SPACING_PX * 4, '6': ROW_SPACING_PX * 5,
+    '7': ROW_SPACING_PX * 6, '8': ROW_SPACING_PX * 7, '9': ROW_SPACING_PX * 8, '10': ROW_SPACING_PX * 9, '11': ROW_SPACING_PX * 10,
+    '12': ROW_SPACING_PX * 11, '13': ROW_SPACING_PX * 12, '14': ROW_SPACING_PX * 13
   } as const,
 } as const;
 

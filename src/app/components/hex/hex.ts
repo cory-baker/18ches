@@ -1,6 +1,7 @@
 import { Component, ElementRef, Input } from '@angular/core';
 import { SVG } from '@svgdotjs/svg.js';
 import { HexModel } from '../../models/hex.model';
+import { HEX_PIXEL_WIDTH } from '../../constants/hex-map';
 
 @Component({
   selector: 'app-hex',
@@ -21,8 +22,9 @@ export class Hex {
     nativeHexElement.setAttribute('data-position', this.hex.position);
     // nativeHexElement.setAttribute('tabindex', '0'); // Make focusable
     nativeHexElement.appendChild(this.hex.svg);
-    nativeHexElement.style.setProperty('--hex-x-pos', this.hex.xPos + '%');
-    nativeHexElement.style.setProperty('--hex-y-pos', this.hex.yPos + '%');
+    nativeHexElement.style.setProperty('--hex-x-pos', this.hex.xPos + 'px');
+    nativeHexElement.style.setProperty('--hex-y-pos', this.hex.yPos + 'px');
+    nativeHexElement.style.setProperty('--hex-width', HEX_PIXEL_WIDTH + 'px');
 
   }
 }
