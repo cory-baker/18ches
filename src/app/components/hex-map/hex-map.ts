@@ -29,7 +29,7 @@ export class HexMap implements OnInit {
 
     function scaleInner() {
       if (wrapper && inner) {
-        const scale = wrapper.clientWidth / 1920;
+        const scale = wrapper.clientWidth / 1400;
         inner.style.transform = `scale(${scale})`;
       }
     }
