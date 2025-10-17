@@ -26,6 +26,13 @@ export const COORDINATE_MAP = {
   } as const,
 } as const;
 
+// Derived map dimensions
+const LAST_COLUMN_INDEX = 11; // Column L is the 12th column (0-indexed = 11)
+const LAST_ROW_INDEX = 13;    // Row 14 is the 14th row (0-indexed = 13)
+
+export const HEX_MAP_WIDTH = COLUMN_SPACING_PX * LAST_COLUMN_INDEX + HEX_PIXEL_WIDTH; // 1110px: Column L position (990px) + hex width (120px)
+export const HEX_MAP_HEIGHT = ROW_SPACING_PX * LAST_ROW_INDEX + HEX_PIXEL_HEIGHT; // 780px: Row 14 position (676px) + hex height (104px)
+
 export const STATIC_HEXES_WITH_INITIAL_GRAPHICS = {
   'A3': INITIAL_MAP.A3,
   'A7': INITIAL_MAP.A7,

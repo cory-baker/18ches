@@ -1,13 +1,8 @@
 #hex-map {
-  width: 100%;
-  aspect-ratio: 7 / 5;
   position: relative;
-  overflow: hidden;
-}
-
-.aspect-container {
-  position: absolute;
   width: var(--map-width);
   height: var(--map-height);
-  transform-origin: top left;
+  justify-self: center;
+  margin-bottom: 0;
+  // transform-origin: bottom left;
 }

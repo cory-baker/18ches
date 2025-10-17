@@ -1,10 +1,4 @@
-.game-wrapper {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: center;
-  // align-items: flex-start;
-  // gap: 20px;
-  // height: 100%;
-  overflow: hidden;
-  height: 100%;
+#game-wrapper {
+  height: 100vh;
+  display: flex;
 }

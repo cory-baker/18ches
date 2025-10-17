@@ -26,11 +26,6 @@ export class HexModel {
     }
     this.xPos = this.pixelsFromXAxis(x);
     this.yPos = this.pixelsFromYAxis(y);
-    console.log(this.xPos, this.yPos)
-    // this.group.transform({
-    //   translateX: this.pixelsFromXAxis(x),
-    //   translateY: this.pixelsFromYAxis(y)
-    // });
     this.svg = this.group.node;
   }
 
