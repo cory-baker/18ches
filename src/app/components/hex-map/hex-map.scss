@@ -7,7 +7,7 @@
 
 .aspect-container {
   position: absolute;
-  width: 1400px;
-  height: 1000px;
+  width: var(--map-width);
+  height: var(--map-height);
   transform-origin: top left;
 }

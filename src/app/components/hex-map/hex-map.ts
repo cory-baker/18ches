@@ -14,36 +14,46 @@ import { Position } from '../../types/coordinates';
 })
 export class HexMap implements OnInit {
   hexes$: Map<Position, HexModel> = new Map();
+  readonly fixedWidth = 1110;  // Actual max width: 990px (column L) + 120px (hex width)
+  readonly fixedHeight = 781;  // Adjusted: 676px (row 14) + ~94px (accounting for hex positioning)
 
   constructor(private mapService: MapService) { }
 
   ngOnInit() {
-    // Initialize data before view is rendered
+    // Set CSS custom properties
+    document.documentElement.style.setProperty('--map-width', `${this.fixedWidth}px`);
+    document.documentElement.style.setProperty('--map-height', `${this.fixedHeight}px`);
+
     this.mapService.initializeMap();
     this.hexes$ = this.mapService.allHexes;
-
-
-
-    const wrapper = document.querySelector('#hex-map') as HTMLElement;
-    const inner = document.querySelector('.aspect-container') as HTMLElement;
-
-    function scaleInner() {
-      if (wrapper && inner) {
-        const scale = wrapper.clientWidth / 1400;
-        inner.style.transform = `scale(${scale})`;
-      }
-    }
-
-    window.addEventListener('resize', scaleInner);
-    scaleInner(); // Initial call
+    window.addEventListener('resize', this.scaleInner);
+    this.scaleInner();
   }
 
-  // ngAfterViewInit() {
-  //   // DOM manipulation after view is ready
-  //   this.mapService.allHexes.forEach((hexModel) => {
-  //     // mapHexes.add(hexModel.group);
-  //   });
-  // }
-  //     SVG(test).addTo('#hex').size('100%', '100%');
+  scaleInner() {
+
+    const wrapper = document.querySelector('body') as HTMLElement;
+    const inner = document.querySelector('.aspect-container') as HTMLElement;
+    if (wrapper && inner) {
+      let scale;
+      let widthMeetsScale = wrapper.clientWidth >= this.fixedWidth;
+      let heightMeetsScale = wrapper.clientHeight >= this.fixedHeight;
+      if (!widthMeetsScale && !heightMeetsScale) {
+        scale = Math.min((wrapper.clientWidth / this.fixedWidth), (wrapper.clientHeight / this.fixedHeight));
+      }
+      else if (!widthMeetsScale && heightMeetsScale) {
+        scale = (wrapper.clientWidth / this.fixedWidth);
+      }
+      else if (widthMeetsScale && !heightMeetsScale) {
+        scale = (wrapper.clientHeight / this.fixedHeight);
+      }
+      else if (widthMeetsScale && heightMeetsScale) {
+        scale = Math.min((wrapper.clientWidth / this.fixedWidth), (wrapper.clientHeight / this.fixedHeight));
+      }
+      inner.style.transform = `scale(${scale})`;
+    }
+  }
+
 
 }
+
