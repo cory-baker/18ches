@@ -3,6 +3,9 @@
 }
 
 .board-container {
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f0efd9;
   padding: var(--border-padding);
   width: var(--board-width);

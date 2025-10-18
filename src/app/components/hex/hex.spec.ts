@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Hex } from './hex';
+import { HexBase } from './hex';
 
 describe('Hex', () => {
-  let component: Hex;
-  let fixture: ComponentFixture<Hex>;
+  let component: HexBase;
+  let fixture: ComponentFixture<HexBase>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Hex]
+      imports: [HexBase]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Hex);
+    fixture = TestBed.createComponent(HexBase);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,5 +1,4 @@
-import { STATIC_HEXES_WITH_INITIAL_GRAPHICS, PLACEABLE_HEXES_WITH_INITIAL_GRAPHICS } from "../constants/hex-map";
-import { HexModel } from "../models/hex.model";
+import { MapModel } from "../models/map.model";
 import { Position } from "../types/coordinates";
 import { Injectable } from '@angular/core';
 
@@ -7,11 +6,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MapService {
-  private hexes = new Map<Position, HexModel>();
+  private hexes = new Map<Position, MapModel>();
 
   initializeMap() {
-    Object.entries({ ...STATIC_HEXES_WITH_INITIAL_GRAPHICS, ...PLACEABLE_HEXES_WITH_INITIAL_GRAPHICS }).forEach(async ([position, svgFile]) => {
-      const hex = new HexModel(position as Position, { raw: svgFile });
+    Object.entries({ ...MapModel.STATIC_POSITIONS_WITH_INITIAL_GRAPHICS, ...MapModel.PLACEABLE_POSITIONS_WITH_INITIAL_GRAPHICS }).forEach(async ([position, svgFile]) => {
+      const hex = new MapModel(position as Position, svgFile);
       this.hexes.set(position as Position, hex);
     });
   }
@@ -20,7 +19,7 @@ export class MapService {
 
   }
 
-  get allHexes(): Map<Position, HexModel> {
+  get allHexes(): Map<Position, MapModel> {
     return this.hexes;
   }
 }
